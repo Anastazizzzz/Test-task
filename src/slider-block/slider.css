@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*min-height: 100vh;*/
+    background-color: #1c1c38; /* Темный фон */
+  }
+  
+  .slider {
+    position: relative;
+    overflow: hidden;
+    width: 80%; /* Ширина слайдера */
+    height: 200px; /* Высота слайдера */
+    display: flex;
+  }
+  
+  .slide {
+    min-width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    /* Поворот и смещение для визуального эффекта */
+    transform: rotate(5deg) translate(10px, -10px);
+    z-index: calc(var(--index) * -1); /* Устанавливаем z-index на основе CSS-переменной */
+  }
+  
+  .slide-image {
+    width: 100%;
+    height: 100%;
+    /*object-fit: cover;*/
+    border-radius: 15px; /* Скругление углов */
+  }
+  

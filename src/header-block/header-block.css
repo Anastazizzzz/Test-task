@@ -1,0 +1,262 @@
+.text-part {
+    position: relative;
+    width: 100%;
+    max-width: 375px;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(34, 33, 50);
+    font-family: "Onest", sans-serif;
+  }
+  
+  .text {
+    color: white;
+  }
+  
+  #GeenScreen {
+    text-align: center;
+    padding-top: 8px;
+    background-color: rgb(139, 216, 103);
+    animation: group-animGeenScreen 5s linear infinite;
+  }
+  
+  /* Subtitle part */
+  .parent-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    align-items: center;
+  }
+  
+  /* Общий стиль для строк */
+  .firstStr, .secondStr, .thirdStr {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sub-title{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 7%;
+  }
+
+  .group3{
+    position: relative;
+    color: white;
+    font-size: 24px;
+    padding: 2px 2px;
+    border-radius: 10px;
+    animation: group-anim3 4s linear infinite;
+  }
+
+  .group4{
+    position: relative;
+    color: white;
+    font-size: 24px;
+    padding: 2px 2px;
+    border-radius: 10px;
+    animation: group-anim4 4s linear infinite;
+  }
+
+  @keyframes group-anim3 {
+    0% {
+      transform: translate(80px, -60%);
+      opacity: 0;
+    }
+    50% {
+      transform: translate(40px, -30%);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translate(0, -0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes group-anim4 {
+    0% {
+      transform: translate(-80px, 60%);
+      opacity: 0;
+    }
+    50% {
+      transform: translate(-40px, 20%);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+  
+  /* Общий стиль для слов */
+  .group1{
+    position: relative;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 15px;
+    animation: group-anim 4s linear infinite;
+  }
+  
+  /* Анимация */
+  @keyframes group-anim {
+    0% {
+      transform: translate(120px, -40%);
+      opacity: 0;
+    }
+    50% {
+      transform: translate(60px, -20%);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translate(0, -0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes group-animGeenScreen {
+    0% {
+      transform: translate(180px, -60%);
+      opacity: 0;
+    }
+    50% {
+      transform: translate(90px, -30%);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translate(0, -0);
+      opacity: 1;
+    }
+  }
+
+  .group2{
+    position: relative;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 15px;
+    animation: group-anim2 4s linear infinite;
+  }
+
+  @keyframes group-anim2 {
+    0% {
+      transform: translate(-120px, 40%);
+      opacity: 0;
+    }
+    50% {
+      transform: translate(-60px, 20%);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+  
+  /* Адаптивность */
+  @media (min-width: 375px) {
+    .text-part {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      height: 100vh;
+      overflow: hidden;
+      background: rgba(34, 33, 50);
+      margin: 0 auto;
+    }
+  
+    .text {
+      color: white;
+    }
+  
+    .parent-header {
+      gap: 30px;
+      font-weight: 700;
+    }
+
+    #GeenScreen {
+        text-align: center;
+        padding-top: 8px;
+        background-color: rgb(139, 216, 103);
+        border-radius: 20px;
+        animation: group-animGeenScreen 5s linear infinite;
+    }
+  
+    .group1, .group2 {
+      font-size: 24px;
+      font-weight: 700; 
+    }
+  }
+  
+  @media (min-width: 600px) {
+    .text-part {
+      position: relative;
+      width: 100%;
+      max-width: 1220px;
+      height: 100vh;
+      overflow: hidden;
+      background: rgba(34, 33, 50);
+      margin: 0 auto;
+    }
+  
+    .text {
+      color: white;
+    }
+  
+    .parent-header {
+      gap: 30px;
+      font-weight: 700;
+    }
+
+    #GeenScreen {
+        text-align: center;
+        padding-top: 8px;
+        background-color: rgb(139, 216, 103);
+        border-radius: 25px;
+        animation: group-animGeenScreen 5s linear infinite;
+    }
+  
+    .group1, .group2 {
+      font-size: 52px;
+      font-weight: 700; 
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .text-part {
+      position: relative;
+      width: 100%;
+      max-width: 1500px;
+      height: 100vh;
+      overflow: hidden;
+      background: rgba(34, 33, 50);
+      margin: 0 auto;
+    }
+  
+    .text {
+      color: white;
+    }
+  
+    .parent-header {
+      gap: 30px;
+      font-weight: 700;
+    }
+
+    #GeenScreen {
+        text-align: center;
+        padding-top: 8px;
+        background-color: rgb(139, 216, 103);
+        border-radius: 30px;
+        animation: group-animGeenScreen 5s linear infinite;
+    }
+  
+    .group1, .group2 {
+      font-size: 52px;
+      font-weight: 700; 
+    }
+  }
